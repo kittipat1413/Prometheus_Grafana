@@ -12,7 +12,7 @@
   ### 1. Prometheus
 
   ```
-  docker run -d -p 9090:9090 -v /home/ec2-user/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml --restart=always --name=prometheus prom/prometheus 
+  docker run -d -p 9090:9090 -v /path/to/your/prometheus.yml:/etc/prometheus/prometheus.yml --restart=always --name=prometheus prom/prometheus 
 
   ```
   * ***Default from DockerFile***
