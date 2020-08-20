@@ -29,7 +29,7 @@
     docker inspect {{NAME}}
     ```
   * ***Custom flags using docker run [OPTIONS] IMAGE[:TAG|@DIGEST] [COMMAND] [ARG...]***
-  * Can override prometheus flag by adding --{{flags set}} 
+    - Override prometheus flag by adding --{{flags set}} 
     ### EX.
     ```
     docker run -d -p 9090:9090 -v /home/ec2-user/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml --restart=always --name=prometheus prom/prometheus --storage.tsdb.retention=5d
