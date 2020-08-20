@@ -26,10 +26,10 @@
 
   * ***Check Args of prometheus (flags)***
     ```
-    docker inspect {{NAME}}
+    docker inspect {{Container NAME,Id}}
     ```
   * ***Custom flags using docker run [OPTIONS] IMAGE[:TAG|@DIGEST] [COMMAND] [ARG...]***
-    - Override prometheus flag by adding --{{flags set}} 
+    _Override prometheus flag by adding --{{flags set}}_ 
     ### EX.
     ```
     docker run -d -p 9090:9090 -v /home/ec2-user/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml --restart=always --name=prometheus prom/prometheus --storage.tsdb.retention=5d
