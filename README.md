@@ -1,6 +1,6 @@
 # Prometheus_Grafana on AWS
 
-##1. RUN Prometheus-Docker
+## 1. RUN Prometheus-Docker
 
 ```
 docker run -d -p 9090:9090 -v /home/ec2-user/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml --restart=always --name=prometheus prom/prometheus 
@@ -19,7 +19,7 @@ CMD        [ "--config.file=/etc/prometheus/prometheus.yml", \
              "--web.console.templates=/usr/share/prometheus/consoles" ]
 
 ```
-see documentation [here](https://github.com/prometheus/prometheus)
+### See documentation [here](https://github.com/prometheus/prometheus)
 
 */Check Args of prometheus (flags)/*
 docker inspect {{NAME}}
