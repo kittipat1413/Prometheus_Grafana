@@ -1,6 +1,13 @@
 # Prometheus_Grafana on AWS
 
-
+## Pull Docker Image
+  ```
+   docker pull prom/prometheus
+   docker pull prom/node-exporter
+   docker pull grafana/grafana
+   
+   ```
+    
 ## Prometheus
   ### 1. RUN Prometheus-Docker
 
