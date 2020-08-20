@@ -62,3 +62,5 @@
 ## Setting-Grafana
 
 ![Setting-Grafana](https://github.com/kittipat1413/Prometheus_Grafana/blob/master/img/Grafana1.png)
+
+### See documentation [here](https://grafana.com/grafana/dashboards/1860)
