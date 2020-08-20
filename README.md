@@ -1,4 +1,4 @@
-# Prometheus_Grafana on AWS
+# Install Prometheus&Grafana on AWS
 
 ## Pull Docker Image
   ```
@@ -8,8 +8,8 @@
    
    ```
     
-## Prometheus
-  ### 1. RUN Prometheus-Docker
+## RUN Docker
+  ### 1. Prometheus
 
   ```
   docker run -d -p 9090:9090 -v /home/ec2-user/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml --restart=always --name=prometheus prom/prometheus 
@@ -43,21 +43,22 @@
     docker run -d -p 9090:9090 -v /home/ec2-user/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml --restart=always --name=prometheus prom/prometheus --storage.tsdb.retention=5d    
     ```
 
-## Node-Exporter
+  ### 2. Node-Exporter
 
-  ### 2.
   ```
   docker run -d -p 9100:9100 --restart=always --name=node-exporter prom/node-exporter
   ```
   
-## Grafana
-  ### 3.
+  ### 3. Grafana
+  
   ```
   docker run -d -p 3000:3000 --name=grafana --restart=always -e "GF_SERVER_ROOT_URL=http://grafana.server.name" -e "GF_SECURITY_ADMIN_PASSWORD=admin" grafana/grafana
   ```
-*Grafana user,pass*
-- User: admin
-- Pass: admin
+  *Grafana user,pass*
+  - User: admin
+  - Pass: admin
+
 
 ## Setting-Grafana
+
 ![Setting-Grafana](https://github.com/kittipat1413/Prometheus_Grafana/blob/master/img/Grafana1.png)
