@@ -58,3 +58,6 @@
 *Grafana user,pass*
 - User: admin
 - Pass: admin
+
+## Setting-Grafana
+![Setting-Grafana](https://github.com/kittipat1413/Prometheus_Grafana/blob/master/img/Grafana1.png)
