@@ -9,13 +9,14 @@
    ```
     
 ## RUN Docker
-  ### 1. Prometheus
+  ### 1. Prometheus (See documentation [here](https://github.com/prometheus/prometheus))
+
 
   ```
   docker run -d -p 9090:9090 -v /path/to/your/prometheus.yml:/etc/prometheus/prometheus.yml --restart=always --name=prometheus prom/prometheus 
 
   ```
-  * ***Default from DockerFile***
+  * ***Default from DockerFile ***
     * ENTRYPOINT is default command to execute at runtime (./bin/prometheus)
     * CMD or COMMAND will be appended as arguments to the ENTRYPOINT
     * Full command that will be run in container => ./bin/prometheus --config.file=/etc/prometheus/prometheus.yml --storage.tsdb.path=/prometheus ........................
@@ -28,9 +29,6 @@
                  "--web.console.templates=/usr/share/prometheus/consoles" ]
 
     ```
-    ### See documentation [here](https://github.com/prometheus/prometheus)
-
-
   * ***Check Args of prometheus (flags)***
     ```
     docker inspect {{Container NAME,ID}}
