@@ -45,10 +45,28 @@
 
   ### 2. Node-Exporter
 
+ * ***Using Docker*** 
   ```
   docker run -d -p 9100:9100 --restart=always --name=node-exporter prom/node-exporter
   ```
-  
+ * ***Building and running Local***
+
+  Prerequisites:
+
+  * [Go compiler](https://golang.org/dl/)
+  * RHEL/CentOS: `glibc-static` package.
+
+  Building:
+
+      go get github.com/prometheus/node_exporter
+      cd ${GOPATH-$HOME/go}/src/github.com/prometheus/node_exporter
+      make
+      ./node_exporter <flags>
+
+  To see all available configuration flags:
+
+  ./node_exporter -h
+
   ### 3. Grafana
   
   ```
