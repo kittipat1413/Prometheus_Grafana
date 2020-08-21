@@ -28,7 +28,7 @@
                  "--web.console.templates=/usr/share/prometheus/consoles" ]
 
     ```
-    **See documentation [here]**(https://github.com/prometheus/prometheus)
+    ### See documentation [here](https://github.com/prometheus/prometheus)
 
 
   * ***Check Args of prometheus (flags)***
@@ -67,7 +67,7 @@
     ```
     ./node_exporter -h
     ```
-  **See documentation [here](https://github.com/prometheus/node_exporter)
+  ### See documentation [here](https://github.com/prometheus/node_exporter)
   
   
   ### 3. Grafana
@@ -84,4 +84,4 @@
 
 ![Setting-Grafana](https://github.com/kittipat1413/Prometheus_Grafana/blob/master/img/Grafana1.png)
 
-**See documentation [here](https://grafana.com/grafana/dashboards/1860)
+### See documentation [here](https://grafana.com/grafana/dashboards/1860)
