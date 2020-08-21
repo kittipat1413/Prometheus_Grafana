@@ -1,4 +1,4 @@
-# Setting Prometheus&Grafana
+# Setting Prometheus - Grafana - Node Exporter 
 
 ## Pull Docker Image
   ```
