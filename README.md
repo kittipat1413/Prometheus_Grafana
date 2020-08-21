@@ -28,7 +28,7 @@
                  "--web.console.templates=/usr/share/prometheus/consoles" ]
 
     ```
-    **See documentation [here](https://github.com/prometheus/prometheus)
+    **See documentation [here]**(https://github.com/prometheus/prometheus)
 
 
   * ***Check Args of prometheus (flags)***
@@ -46,9 +46,9 @@
   ### 2. Node-Exporter
 
  * ***Using Docker*** 
-  ```
-  docker run -d -p 9100:9100 --restart=always --name=node-exporter prom/node-exporter
-  ```
+    ```
+    docker run -d -p 9100:9100 --restart=always --name=node-exporter prom/node-exporter
+    ```
  * ***Building and running Local***
 
     __Prerequisites__:
