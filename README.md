@@ -1,4 +1,4 @@
-# Install Prometheus&Grafana on AWS
+# Setting Prometheus&Grafana
 
 ## Pull Docker Image
   ```
