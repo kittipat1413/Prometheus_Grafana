@@ -28,7 +28,7 @@
                  "--web.console.templates=/usr/share/prometheus/consoles" ]
 
     ```
-    ### See documentation [here](https://github.com/prometheus/prometheus)
+    **See documentation [here](https://github.com/prometheus/prometheus)
 
 
   * ***Check Args of prometheus (flags)***
@@ -51,22 +51,25 @@
   ```
  * ***Building and running Local***
 
-  Prerequisites:
+    __Prerequisites__:
 
-  * [Go compiler](https://golang.org/dl/)
-  * RHEL/CentOS: `glibc-static` package.
+    * [Go compiler](https://golang.org/dl/)
+    * RHEL/CentOS: `glibc-static` package.
 
-  Building:
+    __Building:__
 
-      go get github.com/prometheus/node_exporter
-      cd ${GOPATH-$HOME/go}/src/github.com/prometheus/node_exporter
-      make
-      ./node_exporter <flags>
+        go get github.com/prometheus/node_exporter
+        cd ${GOPATH-$HOME/go}/src/github.com/prometheus/node_exporter
+        make
+        ./node_exporter <flags>
 
-  To see all available configuration flags:
-
-  ./node_exporter -h
-
+    __To see all available configuration flags:__
+    ```
+    ./node_exporter -h
+    ```
+  **See documentation [here](https://github.com/prometheus/node_exporter)
+  
+  
   ### 3. Grafana
   
   ```
@@ -81,4 +84,4 @@
 
 ![Setting-Grafana](https://github.com/kittipat1413/Prometheus_Grafana/blob/master/img/Grafana1.png)
 
-### See documentation [here](https://grafana.com/grafana/dashboards/1860)
+**See documentation [here](https://grafana.com/grafana/dashboards/1860)
