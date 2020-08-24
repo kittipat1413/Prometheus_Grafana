@@ -10,7 +10,7 @@
     
 ## RUN Docker
   ### 1. Prometheus (See documentation [here](https://github.com/prometheus/prometheus))
-  __How to instrument your #Golang #Java #Python and #Javascript code using #Prometheus metrics.[here](https://sysdig.com/blog/prometheus-metrics/)__
+  __How to instrument your #Golang #Java #Python and #Javascript code using #Prometheus metrics. [here](https://sysdig.com/blog/prometheus-metrics/)__
 
   ```
   docker run -d -p 9090:9090 -v /path/to/your/prometheus.yml:/etc/prometheus/prometheus.yml --restart=always --name=prometheus prom/prometheus 
