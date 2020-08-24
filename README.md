@@ -40,7 +40,7 @@
     ```
     docker run -d -p 9090:9090 -v /home/ec2-user/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml --restart=always --name=prometheus prom/prometheus --storage.tsdb.retention=5d    
     ```
-  *(How to instrument your #Golang #Java #Python and #Javascript code using #Prometheus metrics.[here](https://sysdig.com/blog/prometheus-metrics/))*
+  **How to instrument your #Golang #Java #Python and #Javascript code using #Prometheus metrics.[here](https://sysdig.com/blog/prometheus-metrics/)
   
   ### 2. Node-Exporter (See documentation [here](https://github.com/prometheus/node_exporter))
 
