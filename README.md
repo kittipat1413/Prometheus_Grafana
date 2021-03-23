@@ -77,7 +77,10 @@
   - Pass: admin
 
 
-## Setting-Grafana (See documentation [here](https://grafana.com/grafana/dashboards/1860))
+## Setting-Grafana (See documentation)
+- [Node Exporter Full](https://grafana.com/grafana/dashboards/1860)
+- [Configure-Docker](https://grafana.com/docs/grafana/latest/administration/configure-docker/)
+- [Administration/Configuration](https://grafana.com/docs/grafana/latest/administration/configuration/)
 
 ![Setting-Grafana](https://github.com/kittipat1413/Prometheus_Grafana/blob/master/img/Grafana1.png)
 
